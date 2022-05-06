@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11798E6FD3DF58078EA80535 /* libPods-Sutda.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82AD990A4F5E2C75BD59F406 /* libPods-Sutda.a */; };
+		A12F1DA827C9104A0078D04E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F1DA727C9104A0078D04E /* Result.swift */; };
+		A12F1DAA27C922980078D04E /* ListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F1DA927C922980078D04E /* ListData.swift */; };
+		A164B24127CA485900413131 /* CardSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164B24027CA485900413131 /* CardSelection.swift */; };
+		A164B24327CA574F00413131 /* SutdaInform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164B24227CA574F00413131 /* SutdaInform.swift */; };
+		A164B24527CA676400413131 /* SutdaExp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164B24427CA676400413131 /* SutdaExp.swift */; };
+		A164B24927CA679200413131 /* WhatIsSutda.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164B24827CA679200413131 /* WhatIsSutda.swift */; };
+		A1C4FFCC27C7EE500047329D /* SutdaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C4FFCB27C7EE500047329D /* SutdaApp.swift */; };
+		A1C4FFCE27C7EE500047329D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C4FFCD27C7EE500047329D /* ContentView.swift */; };
+		A1C4FFD027C7EE520047329D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C4FFCF27C7EE520047329D /* Assets.xcassets */; };
+		A1C4FFD327C7EE520047329D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C4FFD227C7EE520047329D /* Preview Assets.xcassets */; };
+		A1EFA07227D3A6F400134561 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1EFA07427D3A6F400134561 /* InfoPlist.strings */; };
+		A1EFA07A27D3BD7F00134561 /* BannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EFA07927D3BD7F00134561 /* BannerAd.swift */; };
+		A1EFA08327D3DA8700134561 /* InterstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EFA08227D3DA8700134561 /* InterstitialAd.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		69DD8248754EA7249F4FD974 /* Pods-Sutda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sutda.release.xcconfig"; path = "Target Support Files/Pods-Sutda/Pods-Sutda.release.xcconfig"; sourceTree = "<group>"; };
+		82AD990A4F5E2C75BD59F406 /* libPods-Sutda.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sutda.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12F1DA727C9104A0078D04E /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A12F1DA927C922980078D04E /* ListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListData.swift; sourceTree = "<group>"; };
+		A164B24027CA485900413131 /* CardSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelection.swift; sourceTree = "<group>"; };
+		A164B24227CA574F00413131 /* SutdaInform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SutdaInform.swift; sourceTree = "<group>"; };
+		A164B24427CA676400413131 /* SutdaExp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SutdaExp.swift; sourceTree = "<group>"; };
+		A164B24827CA679200413131 /* WhatIsSutda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsSutda.swift; sourceTree = "<group>"; };
+		A1C4FFC827C7EE500047329D /* Sutda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sutda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C4FFCB27C7EE500047329D /* SutdaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SutdaApp.swift; sourceTree = "<group>"; };
+		A1C4FFCD27C7EE500047329D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1C4FFCF27C7EE520047329D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1C4FFD227C7EE520047329D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A1EFA07327D3A6F400134561 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1EFA07527D3A70900134561 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1EFA07927D3BD7F00134561 /* BannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAd.swift; sourceTree = "<group>"; };
+		A1EFA08227D3DA8700134561 /* InterstitialAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAd.swift; sourceTree = "<group>"; };
+		F7DAAD39D75B7F829629953B /* Pods-Sutda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sutda.debug.xcconfig"; path = "Target Support Files/Pods-Sutda/Pods-Sutda.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1C4FFC527C7EE500047329D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11798E6FD3DF58078EA80535 /* libPods-Sutda.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F4DC7F34AF666524C2D16D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7DAAD39D75B7F829629953B /* Pods-Sutda.debug.xcconfig */,
+				69DD8248754EA7249F4FD974 /* Pods-Sutda.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A1C4FFBF27C7EE500047329D = {
+			isa = PBXGroup;
+			children = (
+				A1EFA07427D3A6F400134561 /* InfoPlist.strings */,
+				A1C4FFCA27C7EE500047329D /* Sutda */,
+				A1C4FFC927C7EE500047329D /* Products */,
+				7F4DC7F34AF666524C2D16D9 /* Pods */,
+				E5D08B07BFBDE015AFE6A22B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A1C4FFC927C7EE500047329D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1C4FFC827C7EE500047329D /* Sutda.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1C4FFCA27C7EE500047329D /* Sutda */ = {
+			isa = PBXGroup;
+			children = (
+				A1EFA08227D3DA8700134561 /* InterstitialAd.swift */,
+				A1EFA07927D3BD7F00134561 /* BannerAd.swift */,
+				A164B24027CA485900413131 /* CardSelection.swift */,
+				A1C4FFCB27C7EE500047329D /* SutdaApp.swift */,
+				A12F1DA727C9104A0078D04E /* Result.swift */,
+				A12F1DA927C922980078D04E /* ListData.swift */,
+				A164B24227CA574F00413131 /* SutdaInform.swift */,
+				A1C4FFCD27C7EE500047329D /* ContentView.swift */,
+				A164B24827CA679200413131 /* WhatIsSutda.swift */,
+				A164B24427CA676400413131 /* SutdaExp.swift */,
+				A1C4FFCF27C7EE520047329D /* Assets.xcassets */,
+				A1C4FFD127C7EE520047329D /* Preview Content */,
+			);
+			path = Sutda;
+			sourceTree = "<group>";
+		};
+		A1C4FFD127C7EE520047329D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A1C4FFD227C7EE520047329D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E5D08B07BFBDE015AFE6A22B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82AD990A4F5E2C75BD59F406 /* libPods-Sutda.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1C4FFC727C7EE500047329D /* Sutda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C4FFD627C7EE520047329D /* Build configuration list for PBXNativeTarget "Sutda" */;
+			buildPhases = (
+				72E2EF9FFC86F98F779A9A88 /* [CP] Check Pods Manifest.lock */,
+				A1C4FFC427C7EE500047329D /* Sources */,
+				A1C4FFC527C7EE500047329D /* Frameworks */,
+				A1C4FFC627C7EE500047329D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sutda;
+			productName = Sutda;
+			productReference = A1C4FFC827C7EE500047329D /* Sutda.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1C4FFC027C7EE500047329D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A1C4FFC727C7EE500047329D = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A1C4FFC327C7EE500047329D /* Build configuration list for PBXProject "Sutda" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ko,
+			);
+			mainGroup = A1C4FFBF27C7EE500047329D;
+			productRefGroup = A1C4FFC927C7EE500047329D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1C4FFC727C7EE500047329D /* Sutda */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1C4FFC627C7EE500047329D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C4FFD327C7EE520047329D /* Preview Assets.xcassets in Resources */,
+				A1EFA07227D3A6F400134561 /* InfoPlist.strings in Resources */,
+				A1C4FFD027C7EE520047329D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72E2EF9FFC86F98F779A9A88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sutda-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1C4FFC427C7EE500047329D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A164B24327CA574F00413131 /* SutdaInform.swift in Sources */,
+				A12F1DA827C9104A0078D04E /* Result.swift in Sources */,
+				A1EFA08327D3DA8700134561 /* InterstitialAd.swift in Sources */,
+				A1C4FFCE27C7EE500047329D /* ContentView.swift in Sources */,
+				A1C4FFCC27C7EE500047329D /* SutdaApp.swift in Sources */,
+				A1EFA07A27D3BD7F00134561 /* BannerAd.swift in Sources */,
+				A164B24927CA679200413131 /* WhatIsSutda.swift in Sources */,
+				A12F1DAA27C922980078D04E /* ListData.swift in Sources */,
+				A164B24527CA676400413131 /* SutdaExp.swift in Sources */,
+				A164B24127CA485900413131 /* CardSelection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A1EFA07427D3A6F400134561 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1EFA07327D3A6F400134561 /* en */,
+				A1EFA07527D3A70900134561 /* ko */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1C4FFD427C7EE520047329D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1C4FFD527C7EE520047329D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1C4FFD727C7EE520047329D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7DAAD39D75B7F829629953B /* Pods-Sutda.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_ASSET_PATHS = "\"Sutda/Preview Content\"";
+				DEVELOPMENT_TEAM = V7PY3LBTLD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sutda/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "섯다 족보 & 가이드북에서 사용자에게 맞춤 정보를 제공하기 위해 정보를 수집하려 합니다.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakey1110.Sutda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A1C4FFD827C7EE520047329D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69DD8248754EA7249F4FD974 /* Pods-Sutda.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_ASSET_PATHS = "\"Sutda/Preview Content\"";
+				DEVELOPMENT_TEAM = V7PY3LBTLD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sutda/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "섯다 족보 & 가이드북에서 사용자에게 맞춤 정보를 제공하기 위해 정보를 수집하려 합니다.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakey1110.Sutda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1C4FFC327C7EE500047329D /* Build configuration list for PBXProject "Sutda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C4FFD427C7EE520047329D /* Debug */,
+				A1C4FFD527C7EE520047329D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C4FFD627C7EE520047329D /* Build configuration list for PBXNativeTarget "Sutda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C4FFD727C7EE520047329D /* Debug */,
+				A1C4FFD827C7EE520047329D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1C4FFC027C7EE500047329D /* Project object */;
+}
