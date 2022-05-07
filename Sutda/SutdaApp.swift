@@ -13,6 +13,7 @@ struct SutdaApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(ListData())
+                .environmentObject(SettingData())
         }
     }
 }

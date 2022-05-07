@@ -12,6 +12,7 @@ struct Result: View {
             UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.red]
     }
     
+    @EnvironmentObject var settingData: SettingData
     @EnvironmentObject var selectedArray: ListData
     
     var body: some View {
@@ -19,20 +20,47 @@ struct Result: View {
         let results: [String] = changeElement()
 
         GeometryReader { geo in
-            VStack(spacing: 0) {
-                ForEach(0 ..< 17) { index in
-                    if index == textNum {
-                        Text(results[index])
-                            .font(.system(size: 100))
-                            .foregroundColor(.red)
-                            .frame(width: geo.size.width, height: geo.size.height * 3 / 35)
-                            .minimumScaleFactor(0.001)
+            HStack {
+                VStack(spacing: 0) {
+                    ForEach(0 ..< 17) { index in
+                        if index == textNum {
+                            Text(results[index])
+                                .font(.system(size: 100))
+                                .foregroundColor(.red)
+                                .frame(width: settingData.winRate ? geo.size.width*2/3 : geo.size.width, height: geo.size.height * 3 / 35)
+                                .minimumScaleFactor(0.001)
+                        }
+                        else {
+                            Text(results[index])
+                                .font(.system(size: 100))
+                                .frame(width: settingData.winRate ? geo.size.width*2/3 : geo.size.width, height: geo.size.height * 2 / 35)
+                                .minimumScaleFactor(0.001)
+                        }
                     }
-                    else {
-                        Text(results[index])
-                            .font(.system(size: 100))
-                            .frame(width: geo.size.width, height: geo.size.height * 2 / 35)
-                            .minimumScaleFactor(0.001)
+                }
+                if settingData.winRate {
+                    VStack {
+                        Spacer()
+                        Text("게임 인원 수")
+                            .font(.title2)
+                        Text("\(settingData.howMany + 3)")
+                            .font(.largeTitle)
+                            .foregroundColor(.red)
+                        Spacer()
+                        Text("승리 확률")
+                            .font(.title2)
+                        Text("33 %")
+                            .font(.largeTitle)
+                            .foregroundColor(.red)
+                            .animation(Animation.easeIn(duration: 0.4))
+                        Spacer()
+                        Text("재경기 확률")
+                            .font(.title2)
+                        Text("3 %")
+                            .font(.largeTitle)
+                            .foregroundColor(.red)
+                            .animation(Animation.easeIn(duration: 0.4))
+                        Spacer()
                     }
                 }
             }
