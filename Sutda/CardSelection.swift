@@ -8,6 +8,21 @@
 import SwiftUI
 import GoogleMobileAds
 
+class HapticManager {
+    static let instance = HapticManager()
+    
+    func notification(type: UINotificationFeedbackGenerator.FeedbackType) {
+         let generator = UINotificationFeedbackGenerator()
+         generator.notificationOccurred(type)
+    }
+    
+    func impact(style: UIImpactFeedbackGenerator.FeedbackStyle) {
+        let generator = UIImpactFeedbackGenerator(style: style)
+        generator.impactOccurred()
+    }
+
+}
+
 struct CardSelection: View {
     private var fullScreenAd: Interstitial?
     
@@ -17,6 +32,7 @@ struct CardSelection: View {
     }
     
     @EnvironmentObject var selectedArray: ListData
+    @EnvironmentObject var settingData: SettingData
     
     @State var clicked: Int = 1
     @State var selected1 = false
@@ -61,6 +77,7 @@ struct CardSelection: View {
                                 if selectedNum == 2 {
                                     //alert
                                     showingAlert = true
+                                    HapticManager.instance.notification(type: .error)
                                 }
                                 else {
                                     selected1 = true
@@ -88,6 +105,7 @@ struct CardSelection: View {
                                 if selectedNum == 2 {
                                     //alert
                                     showingAlert = true
+                                    HapticManager.instance.notification(type: .error)
                                 }
                                 else {
                                     selected2 = true
@@ -115,6 +133,7 @@ struct CardSelection: View {
                                 if selectedNum == 2 {
                                     //alert
                                     showingAlert = true
+                                    HapticManager.instance.notification(type: .error)
                                 }
                                 else {
                                     selected3 = true
@@ -142,6 +161,7 @@ struct CardSelection: View {
                                 if selectedNum == 2 {
                                     //alert
                                     showingAlert = true
+                                    HapticManager.instance.notification(type: .error)
                                 }
                                 else {
                                     selected4 = true
@@ -169,6 +189,7 @@ struct CardSelection: View {
                                 if selectedNum == 2 {
                                     //alert
                                     showingAlert = true
+                                    HapticManager.instance.notification(type: .error)
                                 }
                                 else {
                                     selected5 = true
@@ -199,6 +220,7 @@ struct CardSelection: View {
                                 if selectedNum == 2 {
                                     //alert
                                     showingAlert = true
+                                    HapticManager.instance.notification(type: .error)
                                 }
                                 else {
                                     selected6 = true
@@ -226,6 +248,7 @@ struct CardSelection: View {
                                 if selectedNum == 2 {
                                     //alert
                                     showingAlert = true
+                                    HapticManager.instance.notification(type: .error)
                                 }
                                 else {
                                     selected7 = true
@@ -253,6 +276,7 @@ struct CardSelection: View {
                                 if selectedNum == 2 {
                                     //alert
                                     showingAlert = true
+                                    HapticManager.instance.notification(type: .error)
                                 }
                                 else {
                                     selected8 = true
@@ -280,6 +304,7 @@ struct CardSelection: View {
                                 if selectedNum == 2 {
                                     //alert
                                     showingAlert = true
+                                    HapticManager.instance.notification(type: .error)
                                 }
                                 else {
                                     selected9 = true
@@ -307,6 +332,7 @@ struct CardSelection: View {
                                 if selectedNum == 2 {
                                     //alert
                                     showingAlert = true
+                                    HapticManager.instance.notification(type: .error)
                                 }
                                 else {
                                     selected10 = true
@@ -337,6 +363,7 @@ struct CardSelection: View {
                                 if selectedNum == 2 {
                                     //alert
                                     showingAlert = true
+                                    HapticManager.instance.notification(type: .error)
                                 }
                                 else {
                                     selected11 = true
@@ -364,6 +391,7 @@ struct CardSelection: View {
                                 if selectedNum == 2 {
                                     //alert
                                     showingAlert = true
+                                    HapticManager.instance.notification(type: .error)
                                 }
                                 else {
                                     selected12 = true
@@ -391,6 +419,7 @@ struct CardSelection: View {
                                 if selectedNum == 2 {
                                     //alert
                                     showingAlert = true
+                                    HapticManager.instance.notification(type: .error)
                                 }
                                 else {
                                     selected13 = true
@@ -418,6 +447,7 @@ struct CardSelection: View {
                                 if selectedNum == 2 {
                                     //alert
                                     showingAlert = true
+                                    HapticManager.instance.notification(type: .error)
                                 }
                                 else {
                                     selected14 = true
@@ -445,6 +475,7 @@ struct CardSelection: View {
                                 if selectedNum == 2 {
                                     //alert
                                     showingAlert = true
+                                    HapticManager.instance.notification(type: .error)
                                 }
                                 else {
                                     selected15 = true
@@ -475,6 +506,7 @@ struct CardSelection: View {
                                 if selectedNum == 2 {
                                     //alert
                                     showingAlert = true
+                                    HapticManager.instance.notification(type: .error)
                                 }
                                 else {
                                     selected16 = true
@@ -502,6 +534,7 @@ struct CardSelection: View {
                                 if selectedNum == 2 {
                                     //alert
                                     showingAlert = true
+                                    HapticManager.instance.notification(type: .error)
                                 }
                                 else {
                                     selected17 = true
@@ -529,6 +562,7 @@ struct CardSelection: View {
                                 if selectedNum == 2 {
                                     //alert
                                     showingAlert = true
+                                    HapticManager.instance.notification(type: .error)
                                 }
                                 else {
                                     selected18 = true
@@ -556,6 +590,7 @@ struct CardSelection: View {
                                 if selectedNum == 2 {
                                     //alert
                                     showingAlert = true
+                                    HapticManager.instance.notification(type: .error)
                                 }
                                 else {
                                     selected19 = true
@@ -583,6 +618,7 @@ struct CardSelection: View {
                                 if selectedNum == 2 {
                                     //alert
                                     showingAlert = true
+                                    HapticManager.instance.notification(type: .error)
                                 }
                                 else {
                                     selected20 = true
@@ -609,12 +645,13 @@ struct CardSelection: View {
                     }
                     Button(action: {
                         clicked += 1
-                        clicked = clicked % 14
+                        clicked = clicked % 12
                         if clicked == 0 {
                             self.fullScreenAd?.loadInterstitial()
                         }
                         if selectedNum != 2 {
                             showingAlert2 = true
+                            HapticManager.instance.notification(type: .error)
                         }
                         else {
                             showDashboard = true
@@ -639,6 +676,9 @@ struct CardSelection: View {
                             selected18 = false
                             selected19 = false
                             selected20 = false
+                            if ((selectedArray.find(number1: 3, number2: 8)) || (selectedArray.find(number1: 1, number2: 8)) || (selectedArray.find(number1: 1, number2: 3)) || (selectedArray.find(number1: 10, number2: 20)) || (selectedArray.find(number1: 9, number2: 19)) || (selectedArray.find(number1: 8, number2: 18)) || (selectedArray.find(number1: 7, number2: 17)) || (selectedArray.find(number1: 6, number2: 16)) || (selectedArray.find(number1: 5, number2: 15)) || (selectedArray.find(number1: 4, number2: 14)) || (selectedArray.find(number1: 3, number2: 13)) || (selectedArray.find(number1: 2, number2: 12)) || (selectedArray.find(number1: 1, number2: 11))) && settingData.isHapticOn {
+                                HapticManager.instance.notification(type: .error)
+                            }
                         }
                     }) {
                         Text("결과 보기")
@@ -648,6 +688,7 @@ struct CardSelection: View {
                                 Capsule(style: .continuous).stroke(Color.red, lineWidth: 5))
                     }.alert(isPresented: $showingAlert2) {
                         Alert(title: Text("알림"), message: Text("두개의 카드를 선택하세요"), dismissButton: .default(Text("승인")))
+                            
                     }
                     
                     Spacer()

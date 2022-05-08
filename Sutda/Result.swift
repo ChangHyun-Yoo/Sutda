@@ -7,7 +7,93 @@
 
 import SwiftUI
 
+struct Rainbow: ViewModifier {
+    let hueColors = stride(from: 0.7, to: 1, by: 0.01).map {
+        Color(hue: $0, saturation: 1, brightness: 1)
+    }
+
+    func body(content: Content) -> some View {
+        content
+            .overlay(GeometryReader { (proxy: GeometryProxy) in
+                ZStack {
+                    LinearGradient(gradient: Gradient(colors: self.hueColors),
+                                   startPoint: .leading,
+                                   endPoint: .trailing)
+                        .frame(width: proxy.size.width)
+                }
+            })
+            .mask(content)
+    }
+}
+
+extension View {
+    func rainbow() -> some View {
+        self.modifier(Rainbow())
+    }
+}
+
+struct FireworkParticlesGeometryEffect : GeometryEffect {
+    var time : Double
+    var speed = Double.random(in: 20 ... 200)
+    var direction = Double.random(in: -Double.pi ...  Double.pi)
+    
+    var animatableData: Double {
+        get { time }
+        set { time = newValue }
+    }
+    func effectValue(size: CGSize) -> ProjectionTransform {
+        let xTranslation = speed * cos(direction) * time
+        let yTranslation = speed * sin(direction) * time
+        let affineTranslation =  CGAffineTransform(translationX: xTranslation, y: yTranslation)
+        return ProjectionTransform(affineTranslation)
+    }
+}
+
+struct ParticlesModifier: ViewModifier {
+    @State var time = 0.0
+    @State var scale = 0.1
+    let duration = 15.0
+    
+    func body(content: Content) -> some View {
+        ZStack {
+            ForEach(0..<150, id: \.self) { index in
+                content
+                    .hueRotation(Angle(degrees: time * 80))
+                    .scaleEffect(scale)
+                    .modifier(FireworkParticlesGeometryEffect(time: time))
+                    .opacity(((duration-time) / duration))
+            }
+        }
+        .onAppear {
+            withAnimation (.easeOut(duration: duration)) {
+                self.time = duration
+                self.scale = 1.0
+            }
+        }
+    }
+}
+
+struct ParticleView: View {
+    var body: some View {
+        ZStack {
+            Circle()
+                .fill(Color.blue)
+                .frame(width: 12, height: 12)
+                .modifier(ParticlesModifier())
+                .offset(x: -100, y : -50)
+            
+            Circle()
+                .fill(Color.red)
+                .frame(width: 12, height: 12)
+                .modifier(ParticlesModifier())
+                .offset(x: 60, y : 70)
+        }
+    }
+}
+
 struct Result: View {
+    @EnvironmentObject var settingData: SettingData
+    
     init() {
             UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.red]
     }
@@ -17,27 +103,40 @@ struct Result: View {
     var body: some View {
         let textNum: Int = checkNum(selectedArray: selectedArray)
         let results: [String] = changeElement()
+        
+        if textNum < 4 && settingData.isEffectOn  {
+            ParticleView()
+        }
 
         GeometryReader { geo in
             VStack(spacing: 0) {
                 ForEach(0 ..< 17) { index in
-                    if index == textNum {
+                    if index == textNum && textNum < 4 {
+                        Text(results[index])
+                            .font(.system(size: 100))
+                            .rainbow()
+                            .frame(width: geo.size.width, height: geo.size.height * 3 / 35)
+                            .animation(.none)
+                            .minimumScaleFactor(0.001)
+                    }
+                    else if index == textNum {
                         Text(results[index])
                             .font(.system(size: 100))
                             .foregroundColor(.red)
                             .frame(width: geo.size.width, height: geo.size.height * 3 / 35)
+                            .animation(.none)
                             .minimumScaleFactor(0.001)
                     }
                     else {
                         Text(results[index])
                             .font(.system(size: 100))
                             .frame(width: geo.size.width, height: geo.size.height * 2 / 35)
+                            .animation(.none)
                             .minimumScaleFactor(0.001)
                     }
                 }
             }
         }
-        
     }
     
     func checkNum(selectedArray: ListData) -> Int {

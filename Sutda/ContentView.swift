@@ -25,6 +25,11 @@ struct ContentView: View {
                     Image(systemName: "book.closed.fill")
                     Text("섯다 규칙")
                 }.tag(2)
+            SettingView()
+                .tabItem {
+                    Image(systemName: "gear")
+                    Text("설정")
+                }.tag(3)
         }
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
             ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in })

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		11798E6FD3DF58078EA80535 /* libPods-Sutda.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82AD990A4F5E2C75BD59F406 /* libPods-Sutda.a */; };
+		9D2845902827AD24006356B7 /* SettingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D28458F2827AD24006356B7 /* SettingData.swift */; };
+		9D2845922827ADEB006356B7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2845912827ADEB006356B7 /* SettingView.swift */; };
 		A12F1DA827C9104A0078D04E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F1DA727C9104A0078D04E /* Result.swift */; };
 		A12F1DAA27C922980078D04E /* ListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F1DA927C922980078D04E /* ListData.swift */; };
 		A164B24127CA485900413131 /* CardSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164B24027CA485900413131 /* CardSelection.swift */; };
@@ -26,6 +28,8 @@
 /* Begin PBXFileReference section */
 		69DD8248754EA7249F4FD974 /* Pods-Sutda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sutda.release.xcconfig"; path = "Target Support Files/Pods-Sutda/Pods-Sutda.release.xcconfig"; sourceTree = "<group>"; };
 		82AD990A4F5E2C75BD59F406 /* libPods-Sutda.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sutda.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D28458F2827AD24006356B7 /* SettingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingData.swift; sourceTree = "<group>"; };
+		9D2845912827ADEB006356B7 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		A12F1DA727C9104A0078D04E /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		A12F1DA927C922980078D04E /* ListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListData.swift; sourceTree = "<group>"; };
 		A164B24027CA485900413131 /* CardSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelection.swift; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 				A12F1DA727C9104A0078D04E /* Result.swift */,
 				A12F1DA927C922980078D04E /* ListData.swift */,
 				A164B24227CA574F00413131 /* SutdaInform.swift */,
+				9D28458F2827AD24006356B7 /* SettingData.swift */,
+				9D2845912827ADEB006356B7 /* SettingView.swift */,
 				A1C4FFCD27C7EE500047329D /* ContentView.swift */,
 				A164B24827CA679200413131 /* WhatIsSutda.swift */,
 				A164B24427CA676400413131 /* SutdaExp.swift */,
@@ -223,8 +229,10 @@
 				A1C4FFCE27C7EE500047329D /* ContentView.swift in Sources */,
 				A1C4FFCC27C7EE500047329D /* SutdaApp.swift in Sources */,
 				A1EFA07A27D3BD7F00134561 /* BannerAd.swift in Sources */,
+				9D2845902827AD24006356B7 /* SettingData.swift in Sources */,
 				A164B24927CA679200413131 /* WhatIsSutda.swift in Sources */,
 				A12F1DAA27C922980078D04E /* ListData.swift in Sources */,
+				9D2845922827ADEB006356B7 /* SettingView.swift in Sources */,
 				A164B24527CA676400413131 /* SutdaExp.swift in Sources */,
 				A164B24127CA485900413131 /* CardSelection.swift in Sources */,
 			);
