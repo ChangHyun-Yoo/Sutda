@@ -9,6 +9,7 @@
 
 import SwiftUI
 import AppTrackingTransparency
+import FBAudienceNetwork
 
 struct ContentView: View {
     @State private var selection = 1
@@ -33,6 +34,7 @@ struct ContentView: View {
         }
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
             ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in })
+            FBAdSettings.setAdvertiserTrackingEnabled(true)
         }
         .accentColor(.red)
     }

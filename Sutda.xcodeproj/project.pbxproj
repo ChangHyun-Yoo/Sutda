@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11798E6FD3DF58078EA80535 /* libPods-Sutda.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82AD990A4F5E2C75BD59F406 /* libPods-Sutda.a */; };
 		9D2845902827AD24006356B7 /* SettingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D28458F2827AD24006356B7 /* SettingData.swift */; };
 		9D2845922827ADEB006356B7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2845912827ADEB006356B7 /* SettingView.swift */; };
 		A12F1DA827C9104A0078D04E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F1DA727C9104A0078D04E /* Result.swift */; };
@@ -23,11 +22,12 @@
 		A1EFA07227D3A6F400134561 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1EFA07427D3A6F400134561 /* InfoPlist.strings */; };
 		A1EFA07A27D3BD7F00134561 /* BannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EFA07927D3BD7F00134561 /* BannerAd.swift */; };
 		A1EFA08327D3DA8700134561 /* InterstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EFA08227D3DA8700134561 /* InterstitialAd.swift */; };
+		EEB7A843637E421BF0721C21 /* Pods_Sutda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0220617309C7167448B66685 /* Pods_Sutda.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0220617309C7167448B66685 /* Pods_Sutda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sutda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69DD8248754EA7249F4FD974 /* Pods-Sutda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sutda.release.xcconfig"; path = "Target Support Files/Pods-Sutda/Pods-Sutda.release.xcconfig"; sourceTree = "<group>"; };
-		82AD990A4F5E2C75BD59F406 /* libPods-Sutda.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sutda.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D28458F2827AD24006356B7 /* SettingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingData.swift; sourceTree = "<group>"; };
 		9D2845912827ADEB006356B7 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		A12F1DA727C9104A0078D04E /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11798E6FD3DF58078EA80535 /* libPods-Sutda.a in Frameworks */,
+				EEB7A843637E421BF0721C21 /* Pods_Sutda.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +120,7 @@
 		E5D08B07BFBDE015AFE6A22B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				82AD990A4F5E2C75BD59F406 /* libPods-Sutda.a */,
+				0220617309C7167448B66685 /* Pods_Sutda.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -136,6 +136,7 @@
 				A1C4FFC427C7EE500047329D /* Sources */,
 				A1C4FFC527C7EE500047329D /* Frameworks */,
 				A1C4FFC627C7EE500047329D /* Resources */,
+				375A0B5415C887E0A4363731 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,6 +195,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		375A0B5415C887E0A4363731 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sutda/Pods-Sutda-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sutda/Pods-Sutda-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sutda/Pods-Sutda-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		72E2EF9FFC86F98F779A9A88 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
