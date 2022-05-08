@@ -9,11 +9,19 @@ import Foundation
 import Combine
 
 class SettingData: ObservableObject {
-    @Published var isEffectOn: Bool
-    @Published var isHapticOn: Bool
+    @Published var isEffectOn: Bool {
+        didSet {
+            UserDefaults.standard.set(isEffectOn, forKey: "isEffectOn")
+        }
+    }
+    @Published var isHapticOn: Bool {
+        didSet {
+            UserDefaults.standard.set(isHapticOn, forKey: "isHapticOn")
+        }
+    }
     
     init() {
-        self.isEffectOn = true
-        self.isHapticOn = true
+        self.isEffectOn = UserDefaults.standard.object(forKey: "isEffectOn") as? Bool ?? true
+        self.isHapticOn = UserDefaults.standard.object(forKey: "isHapticOn") as? Bool ?? true
     }
 }
