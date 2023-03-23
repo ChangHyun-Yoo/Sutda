@@ -13,7 +13,6 @@ class Interstitial:NSObject, GADFullScreenContentDelegate {
 
   override init() {
     super.init()
-    self.loadInterstitial()
   }
 
     func loadInterstitial(){
@@ -26,7 +25,10 @@ class Interstitial:NSObject, GADFullScreenContentDelegate {
                                 interstitial = ad
                                 interstitial?.fullScreenContentDelegate = self
                                })
-        
+        print("loaded")
+    }
+    
+    func presentInterstitial() {
         if self.interstitial != nil {
             let scenes = UIApplication.shared.connectedScenes
             let windowScene = scenes.first as? UIWindowScene
@@ -42,7 +44,6 @@ class Interstitial:NSObject, GADFullScreenContentDelegate {
     
     func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
         print("Ad did dismiss full screen content.")
-        self.loadInterstitial()
     }
     
 }
