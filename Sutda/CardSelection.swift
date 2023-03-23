@@ -644,12 +644,10 @@ struct CardSelection: View {
                         Text("")
                     }
                     Button(action: {
-                        clicked += 1
-                        clicked = clicked % 12
-                        if clicked == 0 {
-                            self.fullScreenAd?.loadInterstitial()
-                        }
                         if selectedNum != 2 {
+                            if(clicked != 11) {
+                                clicked += 1
+                            }
                             showingAlert2 = true
                             HapticManager.instance.notification(type: .error)
                         }
@@ -679,6 +677,13 @@ struct CardSelection: View {
                             if ((selectedArray.find(number1: 3, number2: 8)) || (selectedArray.find(number1: 1, number2: 8)) || (selectedArray.find(number1: 1, number2: 3)) || (selectedArray.find(number1: 10, number2: 20)) || (selectedArray.find(number1: 9, number2: 19)) || (selectedArray.find(number1: 8, number2: 18)) || (selectedArray.find(number1: 7, number2: 17)) || (selectedArray.find(number1: 6, number2: 16)) || (selectedArray.find(number1: 5, number2: 15)) || (selectedArray.find(number1: 4, number2: 14)) || (selectedArray.find(number1: 3, number2: 13)) || (selectedArray.find(number1: 2, number2: 12)) || (selectedArray.find(number1: 1, number2: 11))) && settingData.isHapticOn {
                                 HapticManager.instance.notification(type: .error)
                             }
+                            clicked += 1
+                        }
+                        clicked = clicked % 12
+                        if clicked == 8 {
+                            self.fullScreenAd?.loadInterstitial()
+                        } else if clicked == 0 {
+                            self.fullScreenAd?.presentInterstitial()
                         }
                     }) {
                         Text("결과 보기")
