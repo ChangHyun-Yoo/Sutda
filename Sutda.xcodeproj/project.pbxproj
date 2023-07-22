@@ -69,6 +69,33 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9DEBA13F29F92B4400AADABE /* Advertisement */ = {
+			isa = PBXGroup;
+			children = (
+				A1EFA08227D3DA8700134561 /* InterstitialAd.swift */,
+				A1EFA07927D3BD7F00134561 /* BannerAd.swift */,
+			);
+			path = Advertisement;
+			sourceTree = "<group>";
+		};
+		9DEBA14029F92B7000AADABE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A12F1DA927C922980078D04E /* ListData.swift */,
+				9D28458F2827AD24006356B7 /* SettingData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9DEBA14229F92BA600AADABE /* CardSelection */ = {
+			isa = PBXGroup;
+			children = (
+				A164B24027CA485900413131 /* CardSelection.swift */,
+				A12F1DA727C9104A0078D04E /* Result.swift */,
+			);
+			path = CardSelection;
+			sourceTree = "<group>";
+		};
 		A1C4FFBF27C7EE500047329D = {
 			isa = PBXGroup;
 			children = (
@@ -91,14 +118,11 @@
 		A1C4FFCA27C7EE500047329D /* Sutda */ = {
 			isa = PBXGroup;
 			children = (
-				A1EFA08227D3DA8700134561 /* InterstitialAd.swift */,
-				A1EFA07927D3BD7F00134561 /* BannerAd.swift */,
-				A164B24027CA485900413131 /* CardSelection.swift */,
+				9DEBA14229F92BA600AADABE /* CardSelection */,
+				9DEBA14029F92B7000AADABE /* Data */,
+				9DEBA13F29F92B4400AADABE /* Advertisement */,
 				A1C4FFCB27C7EE500047329D /* SutdaApp.swift */,
-				A12F1DA727C9104A0078D04E /* Result.swift */,
-				A12F1DA927C922980078D04E /* ListData.swift */,
 				A164B24227CA574F00413131 /* SutdaInform.swift */,
-				9D28458F2827AD24006356B7 /* SettingData.swift */,
 				9D2845912827ADEB006356B7 /* SettingView.swift */,
 				A1C4FFCD27C7EE500047329D /* ContentView.swift */,
 				A164B24827CA679200413131 /* WhatIsSutda.swift */,
@@ -413,12 +437,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakey1110.Sutda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -446,12 +473,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakey1110.Sutda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
