@@ -14,6 +14,7 @@ struct SutdaApp: App {
             ContentView()
                 .environmentObject(ListData())
                 .environmentObject(SettingData())
+                .navigationViewStyle(.stack)
         }
     }
 }

@@ -63,7 +63,7 @@ struct CardSelection: View {
     var body: some View {
         
         GeometryReader { geo in
-            NavigationView{
+            NavigationView {
                 VStack(spacing: 0) {
                     HStack(spacing: 0) {
                         Button(action: {
@@ -638,8 +638,6 @@ struct CardSelection: View {
                     }
                     .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
                     
-                    Spacer()
-                    
                     NavigationLink(destination: Result(), isActive: $showDashboard) {
                         Text("")
                     }
@@ -699,7 +697,7 @@ struct CardSelection: View {
                     Spacer()
                     
                     BannerAd(unitID: "ca-app-pub-7961540941236327/5096627432")
-                        .frame(width: geo.size.width, height: geo.size.width / 8)
+                        .frame(width: UIDevice.current.userInterfaceIdiom == .pad ?  320 : geo.size.width, height: UIDevice.current.userInterfaceIdiom == .pad ?  40 : geo.size.width / 8)
                     
                 }.navigationBarTitle(Text("카드 선택"))
             }.environmentObject(selectedArray).accentColor(.red)
