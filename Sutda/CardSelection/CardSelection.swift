@@ -686,18 +686,17 @@ struct CardSelection: View {
                     }) {
                         Text("결과 보기")
                             .fontWeight(.bold)
-                            .padding()
+                            .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
                             .overlay(
-                                Capsule(style: .continuous).stroke(Color.red, lineWidth: 5))
+                                Capsule(style: .continuous).stroke(Color.red, lineWidth: 3))
                     }.alert(isPresented: $showingAlert2) {
-                        Alert(title: Text("알림"), message: Text("두개의 카드를 선택하세요"), dismissButton: .default(Text("승인")))
-                            
-                    }
+                        Alert(title: Text("알림"), message: Text("두 개의 카드를 선택하세요"), dismissButton: .default(Text("승인")))
+                    }.padding(EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: 0))
                     
                     Spacer()
                     
                     BannerAd(unitID: "ca-app-pub-7961540941236327/5096627432")
-                        .frame(width: UIDevice.current.userInterfaceIdiom == .pad ?  320 : geo.size.width, height: UIDevice.current.userInterfaceIdiom == .pad ?  40 : geo.size.width / 8)
+                                            .frame(width: 320, height: 40)
                     
                 }.navigationBarTitle(Text("카드 선택"))
             }.environmentObject(selectedArray).accentColor(.red)

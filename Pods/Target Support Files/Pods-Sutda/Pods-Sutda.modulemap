@@ -1,0 +1,6 @@
+framework module Pods_Sutda {
+  umbrella header "Pods-Sutda-umbrella.h"
+
+  export *
+  module * { export * }
+}
