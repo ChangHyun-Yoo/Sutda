@@ -29,6 +29,7 @@ struct CardSelection: View {
     init() {
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         fullScreenAd = Interstitial()
+//        print(GADMobileAds.sharedInstance().versionNumber)
     }
     
     @EnvironmentObject var selectedArray: ListData
@@ -697,6 +698,7 @@ struct CardSelection: View {
                     
                     BannerAd(unitID: "ca-app-pub-7961540941236327/5096627432")
                                             .frame(width: 320, height: 40)
+                                            .padding(EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: 0))
                     
                 }.navigationBarTitle(Text("카드 선택"))
             }.environmentObject(selectedArray).accentColor(.red)
