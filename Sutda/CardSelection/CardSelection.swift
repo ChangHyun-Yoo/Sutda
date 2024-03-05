@@ -66,6 +66,12 @@ struct CardSelection: View {
         GeometryReader { geo in
             NavigationView {
                 VStack(spacing: 0) {
+                    VStack() {
+                        BannerAd(unitID: "ca-app-pub-7961540941236327/5096627432")
+                                                .frame(width: 320, height: 50)
+                                                .padding(EdgeInsets(top: 10, leading: 0, bottom: 40, trailing: 0))
+                        Spacer()
+                    }
                     HStack(spacing: 0) {
                         Button(action: {
                             if selected1 {
@@ -692,15 +698,9 @@ struct CardSelection: View {
                                 Capsule(style: .continuous).stroke(Color.red, lineWidth: 3))
                     }.alert(isPresented: $showingAlert2) {
                         Alert(title: Text("알림"), message: Text("두 개의 카드를 선택하세요"), dismissButton: .default(Text("승인")))
-                    }.padding(EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: 0))
-                    
-                    Spacer()
-                    
-                    BannerAd(unitID: "ca-app-pub-7961540941236327/5096627432")
-                                            .frame(width: 320, height: 40)
-                                            .padding(EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: 0))
-                    
-                }.navigationBarTitle(Text("카드 선택"))
+                    }
+                    .padding(EdgeInsets(top: 10, leading: 0, bottom: 30, trailing: 0))
+                }
             }.environmentObject(selectedArray).accentColor(.red)
         }
     }
