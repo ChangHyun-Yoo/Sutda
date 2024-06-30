@@ -71,7 +71,7 @@ struct CardSelection: View {
                         Spacer()
                         
                         BannerAd(unitID: "ca-app-pub-7961540941236327/5096627432")
-                                                .frame(width: UIDevice.current.userInterfaceIdiom == .pad ?  320 : geo.size.width, height: UIDevice.current.userInterfaceIdiom == .pad ?  40 : geo.size.width / 8)
+                        
                         Spacer()
                     }
                     HStack(spacing: 0) {
