@@ -67,9 +67,11 @@ struct CardSelection: View {
             NavigationView {
                 VStack(spacing: 0) {
                     VStack() {
+                        
+                        Spacer()
+                        
                         BannerAd(unitID: "ca-app-pub-7961540941236327/5096627432")
-                                                .frame(width: 320, height: 50)
-                                                .padding(EdgeInsets(top: 10, leading: 0, bottom: 40, trailing: 0))
+                                                .frame(width: UIDevice.current.userInterfaceIdiom == .pad ?  320 : geo.size.width, height: UIDevice.current.userInterfaceIdiom == .pad ?  40 : geo.size.width / 8)
                         Spacer()
                     }
                     HStack(spacing: 0) {
