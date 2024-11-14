@@ -71,6 +71,7 @@ struct CardSelection: View {
                         Spacer()
                         
                         BannerAd(unitID: "ca-app-pub-7961540941236327/5096627432")
+                            .frame(width: UIScreen.main.bounds.width, height: GADPortraitAnchoredAdaptiveBannerAdSizeWithWidth(UIScreen.main.bounds.width).size.height)
                         
                         Spacer()
                     }
@@ -695,9 +696,9 @@ struct CardSelection: View {
                     }) {
                         Text("결과 보기")
                             .fontWeight(.bold)
-                            .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
+                            .padding()
                             .overlay(
-                                Capsule(style: .continuous).stroke(Color.red, lineWidth: 3))
+                                Capsule(style: .continuous).stroke(Color.red, lineWidth: 5))
                     }.alert(isPresented: $showingAlert2) {
                         Alert(title: Text("알림"), message: Text("두 개의 카드를 선택하세요"), dismissButton: .default(Text("승인")))
                     }
